@@ -1,0 +1,121 @@
+$primary: #1561EC;
+$secondary: #03112D;
+
+$text: #313131;
+
+b {
+  color: $primary;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  margin: 2rem 7vw;
+
+  .logo {
+    background: url("@/assets/images/logo.svg") no-repeat;
+    background-size: 5rem;
+    width: 5rem;
+    height: 5rem;
+  }
+
+  .links {
+    display: flex;
+    align-items: center;
+
+    a, .mail-btn {
+      margin-left: 2rem;
+      color: $text;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+
+    .mail-btn {
+      background: url("@/assets/images/icons/mail.svg");
+      background-size: 2rem;
+      width: 2rem;
+      height: 2rem;
+    }
+  }
+}
+
+main {
+  .home {
+    margin: 13vh 7vw;
+
+    h1, p, button {
+      color: $text;
+      margin: 0;
+    }
+
+    h1 {
+      font-size: 4rem;
+    }
+
+    p {
+      font-size: 1.5rem;
+    }
+
+    button {
+      background-color: #1561EC;
+      color: white;
+      font-size: 1.5rem;
+      cursor: pointer;
+
+      padding: 12px 25px;
+      margin-top: 1.5rem;
+
+      border: none;
+      border-radius: 5px;
+    }
+  }
+
+  .tools {
+    background: $secondary;
+    height: 50vh;
+
+    .arrow {
+      background: url("@/assets/images/icons/arrow.svg");
+      background-size: 3rem;
+      width: 3rem;
+      height: 3rem;
+
+      position: relative;
+      top: -20px;
+      left: 49%;
+    }
+
+    .title {
+      width: 100%;
+      text-align: center;
+
+      h3, p {
+        color: white;
+      }
+
+      h3 {
+        font-size: 2rem;
+      }
+
+      p {
+        font-size: 1.1rem;
+      }
+    }
+  }
+
+  .card {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+  }
+}
